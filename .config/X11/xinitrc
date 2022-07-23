@@ -1,0 +1,58 @@
+#! /bin/sh
+# Mandatorily source xinitrc-common, which is common code shared between the
+# Xsession and xinitrc scripts which has been factored out to avoid duplication
+. /etc/X11/xinit/xinitrc-common
+
+export TERMINAL=alacritty
+export BROWSER=qutebrowser
+export EDITOR=vim
+export VIDEO=mpv
+export COLORTERM=truecolor
+export OPENER='xdg-open'
+export PAGER=less
+export QT_QPA_PLATFORMTHEME='qt6ct'
+
+# merge in defaults and keymaps
+userresources=$HOME/.config/X11/Xresources
+usermodmap=$HOME/.config/X11/Xmodmap
+sysresources=/etc/X11/Xresources
+sysmodmap=/etc/X11/Xmodmap
+
+# Setup fractional scaling
+xrandr --output HDMI-1 --scale 0.75
+
+if [ -f $sysresources ]; then
+    xrdb -merge $sysresources
+fi
+
+if [ -f $sysmodmap ]; then
+    xmodmap $sysmodmap
+fi
+
+if [ -f "$userresources" ]; then
+    xrdb -merge "$userresources"
+fi
+
+if [ -f "$usermodmap" ]; then
+    xmodmap "$usermodmap"
+fi
+
+# run all system xinitrc shell scripts.
+for file in /etc/X11/xinit/xinitrc.d/* ; do
+        . $file
+done
+
+# remap super- and compose key 
+setxkbmap -option caps:super
+setxkbmap -option compose:ralt
+
+xbindkeys &
+copyq &
+feh --bg-fill $HOME/Pictures/wallpapers/hal9000.jpg
+sd-chkbat &
+nm-applet &
+flameshot &
+lxpolkit &
+xautolock -time 15 -locker slock &
+picom -b
+exec dwm

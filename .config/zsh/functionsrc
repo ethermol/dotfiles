@@ -1,0 +1,123 @@
+# Alias for use session with current virtualenv's name or "default".
+alias http='http --session=$(basename ${VIRTUAL_ENV:-default})'
+
+# Add header for ajax requests.
+ httpx() {
+    http $* X-Requested-With:XMLHttpRequest
+}
+
+# Function for login. Get csrf token from header.
+function httpl() {
+   csrf=`http $1 -h | grep -Po '(?<=csrftoken=)[^;]*(?=;)'`
+   http -f POST $* X-CsrfToken:$csrf
+}
+
+btpl() {
+    PAGE=$(curl -s $1)
+    url="$(echo \"$PAGE\" | grep -Eoi '<source [^>]+>' | grep -Eo 'src="[^\"]+"' | grep -Eo '(http|https)://[^"]+')"
+    # url="$(curl -s $1 | grep -Eoi '<source [^>]+>' | grep -Eo 'src="[^\"]+"' | grep -Eo '(http|https)://[^"]+')"
+    TITLE=$(echo \"$PAGE\" | grep -oEi "<title>(.*)</title>" | cut -d '>' -f2 | cut -d '<' -f1)
+
+    mpv --ontop=yes --title="$TITLE" --snap-window --autofit-larger='25%' --geometry='-10-10' --speed=1.5 $url &:wq
+
+}
+
+function addtopath() {
+  case ":$PATH:" in
+    *":$1:"*) :;; # already there
+    *) PATH="$1:$PATH";; # or PATH="$PATH:$1"
+  esac
+}
+
+getdefaultsinkname() {
+   pacmd stat | awk -F": " '/^Default sink name: /{print $2}'
+}
+
+getdefaultsinkvol() {
+       pacmd list-sinks |
+          awk '/^\s+name: /{indefault = $2 == "<'$(getdefaultsinkname)'>"}
+              /^\s+volume: / && indefault {print $5; exit}'
+}
+
+setdefaultsinkvol() {
+   pactl set-sink-volume $(getdefaultsinkname) $1
+}
+
+getbatstat() {
+    NUM_BAT=2
+    AC_STATUS=$(acpi -a | awk -F": " '{ print $2 }')
+    BAT_LEVEL0=$(acpi -b | awk -F", " '/^Battery 0:/ { print $2 }' | sed 's/%//')
+    BAT_LEVEL1=$(acpi -b | awk -F", " '/^Battery 1:/ { print $2 }' | sed 's/%//')
+    BAT_LEVEL=$((($BAT_LEVEL0 + $BAT_LEVEL1) / $NUM_BAT))
+
+	if [ $AC_STATUS == 'off-line' ]; then
+		echo -n "BAT: (${BAT_LEVEL}%)"
+	else
+		echo -n "AC: (${BAT_LEVEL}%)"
+	fi
+}
+
+getnetstat() {
+    LAN_DEV=$(ip route | grep default | head -n 1 | awk '{ print $5 }')
+    LAN_IP=$(ip route | grep default | head -n 1 | awk '{ print $9 }')
+
+    [ ${LAN_DEV} != "" ] && echo -e "NET: ${LAN_DEV} / ${LAN_IP}"
+}
+
+lscolors() {
+    for i in {0..255}; do
+        print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}
+    done
+}
+
+### SHELL NAVIGATION
+fcd () {
+  if [ "$#" -eq 0 ]; then
+    cd "$(find -type d | fzf)"
+  else
+    cd "$(find -type d | fzf --query $1)"
+  fi
+}
+
+fopen() {
+  xdg-open "$(find -type f | fzf)"
+}
+
+### ARCHIVE EXTRACTION # usage: ex <file> 
+ex ()
+ {
+   if [ -f $1 ] ; then
+     case $1 in
+       *.tar.bz2)   tar xjf $1   ;;
+       *.tar.gz)    tar xzf $1   ;;
+       *.bz2)       bunzip2 $1   ;;
+       *.rar)       unrar x $1   ;;
+       *.gz)        gunzip $1    ;;
+       *.tar)       tar xf $1    ;;
+       *.tbz2)      tar xjf $1   ;;
+       *.tgz)       tar xzf $1   ;;
+       *.zip)       unzip $1     ;;
+       *.Z)         uncompress $1;;
+       *.7z)        7z x $1      ;;
+       *.deb)       ar x $1      ;;
+       *.tar.xz)    tar xf $1    ;;
+       *.tar.zst)   unzstd $1    ;;
+       *)           echo "'$1' cannot be extracted via ex()" ;;
+     esac
+   else
+     echo "'$1' is not a valid file"
+   fi
+ } 
+
+al2build() {
+  docker run --platform ${LAMBDA_ARCH} \
+    --rm --user "$(id -u)":"$(id -g)" \
+    -v "${PWD}"/usr/src/myapp -w /usr/src/myapp rust:${RUST_VERSION}
+    cargo build --release --target ${RUST_TARGET}
+}
+
+zipRustLambda() {
+  cp ./target/${RUST_TARGET}/release/${PROJECT_NAME} ./bootstrap \
+    && zip lambda.zip bootstrap \
+    && rm bootstrap
+}

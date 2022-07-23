@@ -1,0 +1,308 @@
+
+!! Set a default font and font size as below:
+*.planfontset: mononoki Nerd Font
+*.fontset: mononoki Nerd Font
+*.font: mononoki Nerd Font
+*.size: 11
+*.antialias: true
+*.hinting: true
+!! Type of subpixel antialiasing (none, rgb, bgr, vrgb or vbgr)
+*.rgba: rgb
+*.autohint: true
+!! degree of hinting (hintnone, hintslight, hintmedium, or hintfull)
+*.hintstyle: hintfull
+*.lcdfilter: lcdfilter
+!! Xcursor.size: 32
+
+!! Default foreground/background
+!! See Resources struct in config.def.h for st source for values to override
+st.foreground:  #33cc33
+st.background:  #000000
+st.cursorColor: #aaff00
+st.font: mononoki Nerd Font
+st.termname: xterm-256color
+
+!! name		dark	light
+!! black	0     8
+!! red		1     9
+!! green	2     10
+!! yellow	3     11
+!! blue		4     12
+!! purple	5     13
+!! cyan		6     14
+!! white	7     15
+
+!! Colors
+!! Alamos
+#define base00 #282a36
+#define base01 #f07178
+#define base02 #c3e88d
+#define base03 #ffcb6b
+#define base04 #82aaff
+#define base05 #c792ea
+#define base06 #89ddff
+#define base07 #d0d0d0
+#define base08 #434758
+#define base09 #ff8b92
+#define base0A #ddffa7
+#define base0B #ffe585
+#define base0C #9cc4ff
+#define base0D #e1acff
+#define base0E #a3f7ff
+#define base0F #ffffff
+
+*.color0:       base00
+*.color1:       base09
+*.color2:       base0B
+*.color3:       base0A
+*.color4:       base0F
+*.color5:       base06
+*.color6:       base05
+*.color7:       base04
+*.color8:       base02
+*.color9:       base08
+*.color10:      base0C
+*.color11:      base03
+*.color12:      base01
+*.color13:      base0E
+*.color14:      base0D
+*.color15:      base07
+*.color16:      base09
+*.color17:      base0F
+*.color18:      base01
+*.color19:      base02
+*.color20:      base04
+*.color21:      base06
+
+
+!! gruvbox:
+!#define base00 #1d2021
+!#define base01 #cc241d
+!#define base02 #98971a
+!#define base03 #d79921
+!#define base04 #458588
+!#define base05 #b16286
+!#define base06 #689d6a
+!#define base07 #a89984
+!#define base08 #928374
+!#define base09 #fb4934
+!#define base0A #b8bb26
+!#define base0B #fabd2f
+!#define base0C #83a598
+!#define base0D #d3869b
+!#define base0E #8ec07c
+!#define base0F #ebdbb2
+!*.foreground: #1d2021
+!*.background: #ebdbb2
+
+!! gruvbox light:
+!#define base00 #fbf1c7
+!#define base01 #cc241d
+!#define base02 #98971a
+!#define base03 #d79921
+!#define base04 #458588
+!#define base05 #b16286
+!#define base06 #689d6a
+!#define base07 #7c6f64
+!#define base08 #928374
+!#define base09 #9d0006
+!#define base0A #79740e
+!#define base0B #b57614
+!#define base0C #076678
+!#define base0D #8f3f71
+!#define base0E #427b58
+!#define base0F #3c3836
+!*.background: #fbf1c7
+!*.foreground: #282828
+
+!! programmer
+!#define base00 #1f1f1f
+!#define base01 #f81118
+!#define base02 #2dc55e
+!#define base03 #ecba0f
+!#define base04 #2a84d2
+!#define base05 #4e5ab7
+!#define base06 #1081d6
+!#define base07 #d6dbe5
+!#define base08 #d6dbe5
+!#define base09 #de352e
+!#define base0A #1dd361
+!#define base0B #f3bd09
+!#define base0C #1081d6
+!#define base0D #5350b9
+!#define base0E #0f7ddb
+!#define base0F #ffffff
+!*.foreground:  #d6dbe5
+!*.background:  #131313
+!*.colorBD:     #d6dbe5
+
+!! base16
+!#define base00 #181818
+!#define base01 #ab4642
+!#define base02 #a1b56c
+!#define base03 #f7ca88
+!#define base04 #7cafc2
+!#define base05 #ba8baf
+!#define base06 #86c1b9
+!#define base07 #d8d8d8
+!#define base08 #585858
+!#define base09 #ab4642
+!#define base0A #a1b56c
+!#define base0B #f7ca88
+!#define base0C #7cafc2
+!#define base0D #ba8baf
+!#define base0E #86c1b9
+!#define base0F #f8f8f8
+
+!! solarized
+!#define base00 #073642
+!#define base01 #dc322f
+!#define base02 #859900
+!#define base03 #b58900
+!#define base04 #268bd2
+!#define base05 #d33682
+!#define base06 #2aa198
+!#define base07 #eee8d5
+!#define base08 #cb4b16
+!#define base09 #fdf6e3
+!#define base0A #586e75
+!#define base0B #657b83
+!#define base0C #839496
+!#define base0D #6c71c4
+!#define base0E #93a1a1
+!#define base0F #fdf6e3
+
+!! xterm
+!#define base00 #000000
+!#define base01 #cd0000
+!#define base02 #00cd00
+!#define base03 #cdcd00
+!#define base04 #0000cd
+!#define base05 #cd00cd
+!#define base06 #00cdcd
+!#define base07 #e5e5e5
+!#define base08 #4d4d4d
+!#define base09 #ff0000
+!#define base0A #00ff00
+!#define base0B #ffff00
+!#define base0C #0000ff
+!#define base0D #ff00ff
+!#define base0E #00ffff
+!#define base0F #aabac8
+!*.background:  #000000
+
+!! Dracula Xresources palette
+!#define base00 #000000
+!#define base01 #FF5555
+!#define base02 #50FA7B
+!#define base03 #F1FA8C
+!#define base04 #BD93F9
+!#define base05 #FF79C6
+!#define base06 #8BE9FD
+!#define base07 #BFBFBF
+!#define base08 #4D4D4D
+!#define base09 #FF6E67
+!#define base0A #5AF78E
+!#define base0B #F4F99D
+!#define base0C #CAA9FA
+!#define base0D #FF92D0
+!#define base0E #9AEDFE
+!#define base0F #E6E6E6
+!*.foreground: #F8F8F2
+!*.background: #282A36
+
+!*.background: color0
+!*.color256: #1d2021
+!*.color257: #ebdbb2
+
+! *.boldMode: true
+! *.colorBDMode: false
+!*.colorBD: cyan
+
+!! Base16 Flat
+!#define base00 #2C3E50
+!#define base01 #34495E
+!#define base02 #7F8C8D
+!#define base03 #95A5A6
+!#define base04 #BDC3C7
+!#define base05 #e0e0e0
+!#define base06 #f5f5f5
+!#define base07 #ECF0F1
+!#define base08 #E74C3C
+!#define base09 #E67E22
+!#define base0A #F1C40F
+!#define base0B #2ECC71
+!#define base0C #1ABC9C
+!#define base0D #3498DB
+!#define base0E #9B59B6
+!#define base0F #be643c
+
+! Base16 Eighties
+!#define base00 #2d2d2d
+!#define base01 #393939
+!#define base02 #515151
+!#define base03 #747369
+!#define base04 #a09f93
+!#define base05 #d3d0c8
+!#define base06 #e8e6df
+!#define base07 #f2f0ec
+!#define base08 #f2777a
+!#define base09 #f99157
+!#define base0A #ffcc66
+!#define base0B #99cc99
+!#define base0C #66cccc
+!#define base0D #6699cc
+!#define base0E #cc99cc
+!#define base0F #d27b53
+
+!! Base16 Atelier Dune
+!#define base00 #20201d
+!#define base01 #292824
+!#define base02 #6e6b5e
+!#define base03 #7d7a68
+!#define base04 #999580
+!#define base05 #a6a28c
+!#define base06 #e8e4cf
+!#define base07 #fefbec
+!#define base08 #d73737
+!#define base09 #b65611
+!#define base0A #cfb017
+!#define base0B #60ac39
+!#define base0C #1fad83
+!#define base0D #6684e1
+!#define base0E #b854d4
+!#define base0F #d43552
+
+!! Mos Dune
+!#define base00 #20201d
+!#define base01 #5356A2
+!#define base02 #6e6b5e
+!#define base03 #cfb017
+!#define base04 #999580
+!#define base05 #8be9fd
+!#define base06 #ff79c6
+!#define base07 #fefbec
+!#define base08 #f07178
+!#define base09 #f99157
+!#define base0A #f4f99d
+!#define base0B #60ac39
+!#define base0C #1c8e82
+!#define base0D #6684e1
+!#define base0E #b854d4
+!#define base0F #6c71c4
+
+!! Dark
+!*.foreground:   base0B
+!*.background:   base00
+!*.cursorColor:  base05
+!*.cursorColor2:  base05
+!*.cursorUnderline: true
+!*.cursorBlink: true
+ 
+! Light
+!*.foreground:   base02
+!*.background:   base07
+!*.cursorColor:  base02
+!*.cursorColor2:  base02
+  
+

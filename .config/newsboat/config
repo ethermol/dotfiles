@@ -1,0 +1,76 @@
+# Dark solarized color scheme for newsbeuter, based on
+# Ethan Schoonover's Solarized.
+#
+# In order to use this color scheme, you must first configure
+# your terminal emulator to use the Solarized palette.
+# See <http://ethanschoonover.com/solarized/> for more information.
+
+# color background         default   default
+# color listnormal         default   default
+# color listnormal_unread  default   default
+# color listfocus          black     yellow
+# color listfocus_unread   black     yellow
+# color info               default   black
+# color article            default   default
+# 
+# # highlights
+# highlight article "^(Title):.*$" blue default
+# highlight article "https?://[^ ]+" red default
+# highlight article "\\[image\\ [0-9]+\\]" green default
+## 
+#show-read-feeds no
+auto-reload yes
+
+external-url-viewer "urlscan -dc -r 'linkhandler {}'"
+
+bind-key j down
+bind-key k up
+bind-key j next articlelist
+bind-key k prev articlelist
+bind-key J next-feed articlelist
+bind-key K prev-feed articlelist
+bind-key G end
+bind-key g home
+bind-key d pagedown
+bind-key u pageup
+bind-key l open
+bind-key h quit
+bind-key a toggle-article-read
+bind-key n next-unread
+bind-key N prev-unread
+bind-key D pb-download
+bind-key U show-urls
+bind-key x pb-delete
+
+color listnormal magenta default
+color listfocus color29 color251 standout bold
+color listnormal_unread color45 default
+color listfocus_unread color29 color251 standout bold
+color info red black bold
+color article white default bold
+
+browser linkhandler
+macro , open-in-browser
+macro t set browser "qndl" ; open-in-browser ; set browser linkhandler
+macro a set browser "tsp youtube-dl --add-metadata -xic -f bestaudio/best" ; open-in-browser ; set browser linkhandler
+macro d set browser "tsp youtube-dl --add-metadata --format mp4" ; open-in-browser ; set browser linkhandler
+macro v set browser "setsid -f mpv %u >>/dev/null 2>&1 &" ; open-in-browser ; set browser linkhandler
+macro w set browser "lynx %u" ; open-in-browser ; set browser linkhandler
+macro y set browser "mpv %u" ; open-in-browser ; set browser linkhandler
+macro p set browser "dmenuhandler %u" ; open-in-browser ; set browser linkhandler
+macro q set browser "setsid -f qutebrowser %u" ; open-in-browser ; set browser linkhandler
+macro c set browser "xsel -b <<<" ; open-in-browser ; set browser linkhandler
+macro s set browser "setsid -f podplay >>/dev/null 2>&1 &" ; save /home/mos/.config/newsboat/selected.txt ; open-in-browser ; set browser linkhandler
+
+highlight all "---.*---" yellow
+highlight feedlist ".*(0/0))" black
+highlight article "(^Feed:.*|^Title:.*|^Author:.*)" cyan default bold
+highlight article "(^Link:.*|^Date:.*)" default default
+highlight article "https?://[^ ]+" green default
+highlight article "^(Title):.*$" blue default
+highlight article "\\[[0-9][0-9]*\\]" magenta default bold
+highlight article "\\[image\\ [0-9]+\\]" green default bold
+highlight article "\\[embedded flash: [0-9][0-9]*\\]" green default bold
+highlight article ":.*\\(link\\)$" cyan default
+highlight article ":.*\\(image\\)$" blue default
+highlight article ":.*\\(embedded flash\\)$" magenta default

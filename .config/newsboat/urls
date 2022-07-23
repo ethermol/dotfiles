@@ -1,0 +1,105 @@
+------------------------
+-------PODCASTS---------
+------------------------
+https://d3gih7jbfe3jlq.cloudfront.net/aws-podcast.rss "~PODCAST: Official AWS podcast
+https://linuxunplugged.com/rss "~PODCAST: Linux Unplugged"
+https://linuxactionnews.com/rss "~PODCAST: Linux Action News"
+https://ubuntupodcast.org/feed/podcast/ "~PODCAST: The Ubuntu Podcast" 
+https://podcast.asknoahshow.com/rss "~PODCAST: Ask Noah Show"
+https://latenightlinux.com/feed/all "~PODCAST: Late Night Linux"
+
+------------------------
+-------NEWSFEEDS--------
+------------------------
+https://www.theverge.com/rss/index.xml "~NEWSFEED: TheVerge (Security)"
+https://www.bleepingcomputer.com/feed/ "~NEWSFEED: Bleeping Computer (Security)"
+https://distrowatch.com/news/dw.xml "~NEWSFEED: DistroWatch" 
+http://lxer.com/module/newswire/headlines.rss "~NEWSFEED: LXer"
+https://www.linuxjournal.com/news/feed "~NEWSFEED: Linux Journal"
+https://www.networkworld.com/category/linux/index.rss "~NEWSFEED: Network World (Linux)"
+http://feeds.feedburner.com/d0od "~NEWSFEED: OMG Ubuntu!"
+https://www.phoronix.com/rss.php "~NEWSFEED: Phoronix"
+https://www.zdnet.com/topic/linux/rss.xml "~NEWSFEED: ZDNet (Linux)"
+https://itsfoss.com/feed/ "~NEWSFEED: It's Foss"
+https://linux.softpedia.com/backend.xml "~NEWSFEED: Softpedia (Linux)"
+https://opensource.com/feed "~NEWSFEED: Opensource.com"
+https://betanews.com/feed/ "~NEWSFEED: Beta News"
+http://feeds.feedburner.com/fossbytes "~NEWSFEED: FossBytes"
+https://www.techrepublic.com/rssfeeds/topic/open-source/ "~NEWSFEED: Tech Republic (Open Source)"
+http://feeds.arstechnica.com/arstechnica/gadgets "~NEWSFEED: ArsTechnica (Gadgets)"
+https://hackaday.com/blog/feed/ "~NEWSFEED: Hackaday"
+https://www.gamingonlinux.com/article_rss.php "~NEWSFEED: Gaming On Linux"
+-------------------------
+-------YOUTUBE-----------
+-------------------------
+https://www.youtube.com/feeds/videos.xml?channel_id=UCYg157Qy_U7ZR1WUHTq0Q8Q "~YOUTUBE: AWS Containers"
+https://www.youtube.com/feeds/videos.xml?channel_id=UClLLJjpSWRRa1BosQrNVDjA "~YOUTUBE: AWS Tutorials"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCVls1GmFKf6WlTraIb_IaJg "~YOUTUBE: DistroTube"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC2eYFnH61tmytImy1mTYvhA "~YOUTUBE: Luke Smith"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCld68syR8Wi-GY_n4CaoJGA "~YOUTUBE: Brodie Robertson"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCCIHOP7e271SIumQgyl6XBQ "~YOUTUBE: OldTechBloke"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCKyMiy1zmJ7aZ8aP6DLZLIA "~YOUTUBE: HowToMakeTechWork"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCFWlej2CSKlXW5uE9opXukQ "~YOUTUBE: RunWithTheDolfin"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC5UAwBUum7CPN5buc-_N1Fw "~YOUTUBE: Linux Experiment"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCf93fPKwotph47H3_KDcRyg "~YOUTUBE: Kris Occhipinti"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCkf4VIqu3Acnfzuk3kRIFwA "~YOUTUBE: gotbletu"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCXuqSBlHAE6Xw-yeJA0Tunw "~YOUTUBE: Linus Tech Tips"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCCezIgC97PvUuR4_gbFUs5g "~YOUTUBE: Corey Schafer"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC7YOGHUfC1Tb6E4pudI9STA "~YOUTUBE: Mental Outlaw"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCS97tchJDq17Qms3cux8wcA "~YOUTUBE: CrisatMachine"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCwY9B5_8QDGP8niZhBtTh8w "~YOUTUBE: TWiT Netcast"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCHugE6eRhqB9_AZQh4DDbIw "~YOUTUBE: Jupiter Broadcasting"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCngn7SVujlvskHRvRKc1cTw "~YOUTUBE: BugsWriter"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCWJUSpXVHTaHErtGWC5qPlQ "~YOUTUBE: Destination Linux"
+https://www.youtube.com/feeds/videos.xml?channel_id=UC4w1YQAJMWOz4qtxinq55LQ "~YOUTUBE: Level1Techs"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCOWcZ6Wicl-1N34H0zZe38w "~YOUTUBE: Level1Linux"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCFe9-V_rN9nLqVNiI8Yof3w "~YOUTUBE: DevOpsGuy"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCV_UAKu9-r39cEEXPj_xWfw "~YOUTUBE: Ruptwelve"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCylGUf9BvQooEFjgdNudoQg "~YOUTUBE: The Linux Cast"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCd3dNckv1Za2coSaHGHl5aA "~YOUTUBE: TJ de Vries"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCJdmdUp5BrsWsYVQUylCMLg "~YOUTUBE: Erik Dubois"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCX_WM2O-X96URC5n66G-hvw "~YOUTUBE: Ermanno Ferrari"
+https://www.youtube.com/feeds/videos.xml?channel_id=UCjSEJkpGbcZhvo0lr-44X_w "~YOUTUBE: TechHut"
+-------------------------
+-------PEERTUBE----------
+-------------------------
+https://videos.lukesmith.xyz/feeds/videos.xml?videoChannelId=2 "~PEERTUBE: Luke Smith"
+-------------------------
+-------BITCHUTE----------
+-------------------------
+https://www.bitchute.com/feeds/rss/channel/lukesmith/ "Luke Smith"
+https://www.bitchute.com/feeds/rss/channel/brodierobertson/ "Brodie Robertson"
+-------------------------
+-------REDDIT------------
+-------------------------
+https://www.reddit.com/r/linux.rss "~REDDIT: r/linux"
+https://www.reddit.com/r/commandline.rss "~REDDIT: r/commandline"
+https://www.reddit.com/r/linux4noobs.rss "~REDDIT: r/linux4noobs"
+https://www.reddit.com/r/linuxquestions.rss "~REDDIT: r/linuxquestions"
+https://www.reddit.com/r/linuxmasterrace.rss "~REDDIT: r/linuxmasterrace"
+https://www.reddit.com/r/linux_gaming.rss "~REDDIT: r/linux_gaming"
+https://www.reddit.com/r/linuxaudio.rss "~REDDIT: r/linuxaudio"
+https://www.reddit.com/r/ubuntu.rss "~REDDIT: r/ubuntu"
+https://www.reddit.com/r/archlinux.rss "~REDDIT: r/archlinux"
+https://www.reddit.com/r/vim.rss "~REDDIT: r/vim"
+https://www.reddit.com/r/unixporn.rss "~REDDIT: r/unixporn"
+-------------------------
+-------GIT_REPOS---------
+-------------------------
+https://gitlab.com/dwt1.atom "~GITLAB: dwt1 (distrotube)"
+https://github.com/LukeSmithxyz.atom "~GITHUB: LukeSmithxyz"
+-------------------------
+-------SOURCEFORGE-------
+-------------------------
+https://sourceforge.net/p/clonezilla/activity/feed "~SOURCEFORGE: Clonezilla"
+https://sourceforge.net/p/mx-linux/activity/feed "~SORUCEFORGE: MX Linux"
+https://sourceforge.net/p/antix-linux/activity/feed "~SOURCEFORGE: AntiX"
+https://sourceforge.net/mirror/tor-browser/activity/feed "~SOURCEFORGE: Tor Browser"
+-------------------------
+-------ARCHLINUX---------
+-------------------------
+https://www.archlinux.org/feeds/news/ "~ARCG: Tech"
+https://www.archlinux.org/feeds/packages/added/ "~ARCH: Packages Added"
+https://www.archlinux.org/feeds/packages/removed/ "~ARCH: Packages Removed"
+https://aur.archlinux.org/rss/ "~ARCH: Packages Added (AUR)"
+https://wiki.archlinux.org/api.php?hidebots=1&urlversion=1&days=7&limit=50&action=feedrecentchanges&feedformat=rss "~ARCH: Arch Wiki"

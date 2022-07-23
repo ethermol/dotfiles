@@ -1,0 +1,65 @@
+source ~/.config/user-dirs.dirs
+source ~/.config/user-dirs.dirs
+alias ls='ls --color=auto'
+#alias ls='exa --color=auto'
+alias cdd=${XDG_DOCUMENTS_DIR}
+alias cdD=${XDG_DOWNLOAD_DIR}
+alias cdp=${XDG_PICTURES_DIR}
+alias cdP=${XDG_PUBLIC_DIR}
+alias cdi=${XDG_DOCUMENTS_DIR}/iside
+alias cdra=${XDG_PROJECTS_DIR}/devops/aws-code
+alias cdrc=${XDG_PROJECTS_DIR}/devops/cms-code
+alias cdrd=${XDG_PROJECTS_DIR}/devops/cms-data
+alias cdh=${HOME}
+alias cdb=${HOME}/.local/bin
+alias cdwi=${HOME}/.local/src/work/igamma
+alias cdvw=${HOME}/Repo/vimwiki
+alias cds=${HOME}/.local/src/work
+alias cdsh=${HOME}/.local/src/home
+alias cdc=${HOME}/.config
+alias cfa='vi ${XDG_CONFIG_HOME}/zsh/aliasrc'
+alias cfn='vi ${XDG_CONFIG_HOME}/newsboat/config'
+alias cfu='vi ${XDG_CONFIG_HOME}/newsboat/urls'
+alias tb="socat - tcp4:termbin.com:9999"
+alias glances="/usr/bin/glances --disable-bg"
+alias kubectl='kubectl --kubeconfig ${XDG_CONFIG_HOME}/kube/config'
+alias kc='kubectl --kubeconfig ${XDG_CONFIG_HOME}/kube/config'
+alias tf='terraform'
+alias tg='terragrunt'
+alias tn="tmux -u -f $TMUX_CONFIG new"
+alias tn="tmux -u -f $TMUX_CONFIG attach"
+alias tt="nvim $TMUX_CONFIG"
+
+alias q=oi
+alias sxiv='devour sxiv'
+alias mpv='devour mpv'
+alias zathura='devour zathura'
+alias 2m='pass otp otp/mira/pmostert --clip'
+alias 2mc='pass otp otp/mira/confluence --clip'
+alias 2mj='pass otp otp/mira/jira --clip'
+alias 2mg='pass otp otp/mira/gitlab --clip'
+alias 2c='pass otp otp/cogn/670838 --clip'
+alias 2ge='pass otp otp/github/ethermol --clip'
+alias 2gp='pass otp otp/github/petermostert --clip'
+alias 2gsn='pass otp otp/gstar/somsnop --clip'
+alias 2gsp='pass otp otp/gstar/somsprd --clip'
+alias 2gsv='pass otp otp/gstar/vpnjh --clip'
+alias 2gs='pass otp otp/gstar/ecommerce --clip'
+alias 2ig='pass otp otp/igam/onmicrosoft --clip'
+alias 2ic='pass otp otp/igam/circleci --clip'
+alias vi='nvim -c "let g:tty='\''$(tty)'\''"'
+# alias vifm=vifmrun
+alias lsredir='http --follow --headers --all'
+alias mbsync="mbsync -c ${XDG_CONFIG_HOME}/isync/mbsyncrc"
+alias yarn="yarn --use-yarnrc ${XDG_CONFIG_HOME}/yarn/config"
+alias abook="abook --config ${XDG_CONFIG_HOME}/abook/abookrc --datafile ${XDG_DATA_HOME}/abook/addressbook" 
+alias newsboat="setsid -f podentr && newsboat"
+alias config='git --git-dir=${HOME}/Repo/src/dotfiles --work-tree=${HOME}'
+alias s3cmd='s3cmd --config ${XDG_CONFIG_HOME}/s3cmd/s3cfg'
+# alias teams='teams-insiders --no-sandbox'
+alias updatedb='sudo /usr/libexec/locate.updatedb'
+alias tunnel-gst-prd1-db='ssh -N -L 3306:awsdbp001.c1xxlcapwk5u.eu-west-1.rds.amazonaws.com:3306 management.raw-indigo.prd'
+alias tunnel-gst-prd2-db='ssh -N -L 3306:prd2-hybris-db.c1xxlcapwk5u.eu-west-1.rds.amazonaws.com:3306 management.raw-indigo.prd'
+
+alias sl-clean='make clean && rm -f config.h && git reset --hard origin/master'
+
