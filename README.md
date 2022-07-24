@@ -8,11 +8,12 @@ Might help me as a memory refresher when I messed up once more and can't figure 
 
 ## Contents
 For now the following has been included:
-- zsh environment
-- X11 Configuration
-- tmux setup
+- zsh   environment
+- X11   Configuration
+- tmux  setup
 - dunst Configuration
-- tig Configuration
+- tig   Configuration
+- lynx  Configuration
 - qutebrowser
 - newsboat
 

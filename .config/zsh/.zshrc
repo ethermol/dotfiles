@@ -138,7 +138,7 @@ autoload bashcompinit && bashcompinit
 complete -C '/usr/local/bin/aws_completer' aws
 
 # Source rustup
-. ${XDG_DATA_HOME}/cargo/env"}
+. ${XDG_DATA_HOME}/cargo/env
 
 # Load syntax highlighting; should be last.
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh 2>/dev/null
